@@ -19,6 +19,8 @@
 import gtk
 import logging
 
+from gettext import gettext as _
+
 from sugar.activity import activity 
 
 class HelloWorldActivity(activity.Activity):
