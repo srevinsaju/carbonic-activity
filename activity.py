@@ -17,26 +17,47 @@
 """HelloWorld Activity: A case study for developing an activity."""
 
 import gtk
-import logging
 
 from gettext import gettext as _
 
-from sugar.activity import activity 
+from sugar.activity import activity
+from sugar.graphics.toolbarbox import ToolbarBox
+from sugar.activity.widgets import ActivityToolbarButton
+from sugar.activity.widgets import StopButton
+
 
 class HelloWorldActivity(activity.Activity):
     """HelloWorldActivity class as specified in activity.info"""
+
     def __init__(self, handle):
         """Set up the HelloWorld activity."""
         activity.Activity.__init__(self, handle)
 
-        # top toolbar with close button
-        toolbox = activity.ActivityToolbox(self)
-        self.set_toolbox(toolbox)
-        toolbox.show()
+        # toolbar with the new toolbar redesign
+        toolbar_box = ToolbarBox()
 
-        # label with the text
+        # we do not have collaboration features
+        # make the share option insensitive
+        self.max_participants = 1
+
+        activity_button = ActivityToolbarButton(self)
+        toolbar_box.toolbar.insert(activity_button, 0)
+        activity_button.show()
+
+        separator = gtk.SeparatorToolItem()
+        separator.props.draw = False
+        separator.set_expand(True)
+        toolbar_box.toolbar.insert(separator, -1)
+        separator.show()
+
+        stop_button = StopButton(self)
+        toolbar_box.toolbar.insert(stop_button, -1)
+        stop_button.show()
+
+        self.set_toolbar_box(toolbar_box)
+        toolbar_box.show()
+
+        # label with the text, make the string translatable
         label = gtk.Label(_("Hello World!"))
         self.set_canvas(label)
         label.show()
-
-
