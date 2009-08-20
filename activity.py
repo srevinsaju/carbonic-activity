@@ -17,14 +17,18 @@
 """HelloWorld Activity: A case study for developing an activity."""
 
 import gtk
+import logging
 
 from gettext import gettext as _
 
 from sugar.activity import activity
 from sugar.graphics.toolbarbox import ToolbarBox
-from sugar.activity.widgets import ActivityToolbarButton
+from sugar.activity.widgets import ActivityButton
+from sugar.activity.widgets import ActivityToolbox
+from sugar.activity.widgets import TitleEntry
 from sugar.activity.widgets import StopButton
-
+from sugar.activity.widgets import ShareButton
+from sugar.activity.widgets import KeepButton
 
 class HelloWorldActivity(activity.Activity):
     """HelloWorldActivity class as specified in activity.info"""
@@ -33,17 +37,29 @@ class HelloWorldActivity(activity.Activity):
         """Set up the HelloWorld activity."""
         activity.Activity.__init__(self, handle)
 
-        # toolbar with the new toolbar redesign
-        toolbar_box = ToolbarBox()
-
         # we do not have collaboration features
         # make the share option insensitive
         self.max_participants = 1
 
-        activity_button = ActivityToolbarButton(self)
+        # toolbar with the new toolbar redesign
+        toolbar_box = ToolbarBox()
+
+        activity_button = ActivityButton(self)
         toolbar_box.toolbar.insert(activity_button, 0)
         activity_button.show()
 
+        title_entry = TitleEntry(self)
+        toolbar_box.toolbar.insert(title_entry, -1)
+        title_entry.show()
+
+        share_button = ShareButton(self)
+        toolbar_box.toolbar.insert(share_button, -1)
+        share_button.show()
+
+        keep_button = KeepButton(self)
+        toolbar_box.toolbar.insert(keep_button, -1)
+        keep_button.show()
+        
         separator = gtk.SeparatorToolItem()
         separator.props.draw = False
         separator.set_expand(True)
