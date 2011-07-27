@@ -28,7 +28,6 @@ from sugar.activity.widgets import ActivityToolbox
 from sugar.activity.widgets import TitleEntry
 from sugar.activity.widgets import StopButton
 from sugar.activity.widgets import ShareButton
-from sugar.activity.widgets import KeepButton
 
 class HelloWorldActivity(activity.Activity):
     """HelloWorldActivity class as specified in activity.info"""
@@ -55,10 +54,6 @@ class HelloWorldActivity(activity.Activity):
         share_button = ShareButton(self)
         toolbar_box.toolbar.insert(share_button, -1)
         share_button.show()
-
-        keep_button = KeepButton(self)
-        toolbar_box.toolbar.insert(keep_button, -1)
-        keep_button.show()
         
         separator = gtk.SeparatorToolItem()
         separator.props.draw = False
