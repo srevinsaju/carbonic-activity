@@ -16,18 +16,18 @@
 
 """HelloWorld Activity: A case study for developing an activity."""
 
-import gtk
+from gi.repository import Gtk
 import logging
 
 from gettext import gettext as _
 
-from sugar.activity import activity
-from sugar.graphics.toolbarbox import ToolbarBox
-from sugar.activity.widgets import ActivityButton
-from sugar.activity.widgets import ActivityToolbox
-from sugar.activity.widgets import TitleEntry
-from sugar.activity.widgets import StopButton
-from sugar.activity.widgets import ShareButton
+from sugar3.activity import activity
+from sugar3.graphics.toolbarbox import ToolbarBox
+from sugar3.activity.widgets import ActivityButton
+from sugar3.activity.widgets import ActivityToolbox
+from sugar3.activity.widgets import TitleEntry
+from sugar3.activity.widgets import StopButton
+from sugar3.activity.widgets import ShareButton
 
 class HelloWorldActivity(activity.Activity):
     """HelloWorldActivity class as specified in activity.info"""
@@ -55,7 +55,7 @@ class HelloWorldActivity(activity.Activity):
         toolbar_box.toolbar.insert(share_button, -1)
         share_button.show()
         
-        separator = gtk.SeparatorToolItem()
+        separator = Gtk.SeparatorToolItem()
         separator.props.draw = False
         separator.set_expand(True)
         toolbar_box.toolbar.insert(separator, -1)
@@ -69,6 +69,6 @@ class HelloWorldActivity(activity.Activity):
         toolbar_box.show()
 
         # label with the text, make the string translatable
-        label = gtk.Label(_("Hello World!"))
+        label = Gtk.Label(_("Hello World!"))
         self.set_canvas(label)
         label.show()
