@@ -27,6 +27,7 @@ from sugar3.activity.widgets import ActivityButton
 from sugar3.activity.widgets import TitleEntry
 from sugar3.activity.widgets import StopButton
 from sugar3.activity.widgets import ShareButton
+from sugar3.activity.widgets import DescriptionItem
 
 class HelloWorldActivity(activity.Activity):
     """HelloWorldActivity class as specified in activity.info"""
@@ -49,6 +50,10 @@ class HelloWorldActivity(activity.Activity):
         title_entry = TitleEntry(self)
         toolbar_box.toolbar.insert(title_entry, -1)
         title_entry.show()
+
+        description_item = DescriptionItem(self)
+        toolbar_box.toolbar.insert(description_item, -1)
+        description_item.show()
 
         share_button = ShareButton(self)
         toolbar_box.toolbar.insert(share_button, -1)
