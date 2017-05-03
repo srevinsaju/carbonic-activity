@@ -19,7 +19,6 @@
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
-import logging
 
 from gettext import gettext as _
 
@@ -30,6 +29,7 @@ from sugar3.activity.widgets import TitleEntry
 from sugar3.activity.widgets import StopButton
 from sugar3.activity.widgets import ShareButton
 from sugar3.activity.widgets import DescriptionItem
+
 
 class HelloWorldActivity(activity.Activity):
     """HelloWorldActivity class as specified in activity.info"""
@@ -60,7 +60,7 @@ class HelloWorldActivity(activity.Activity):
         share_button = ShareButton(self)
         toolbar_box.toolbar.insert(share_button, -1)
         share_button.show()
-        
+
         separator = Gtk.SeparatorToolItem()
         separator.props.draw = False
         separator.set_expand(True)
