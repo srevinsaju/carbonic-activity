@@ -16,6 +16,8 @@
 
 """HelloWorld Activity: A case study for developing an activity."""
 
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 import logging
 
