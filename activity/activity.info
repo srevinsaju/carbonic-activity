@@ -2,7 +2,7 @@
 name = HelloWorld
 activity_version = 6
 bundle_id = org.sugarlabs.HelloWorld
-exec = sugar-activity activity.HelloWorldActivity
+exec = sugar-activity3 activity.HelloWorldActivity
 icon = activity-helloworld
 license = GPLv2+
 repository = https://github.com/sugarlabs/hello-world-fork.git
