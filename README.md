@@ -6,3 +6,4 @@ This is an example Sugar Desktop Activity, that follows the "Hello World" tradit
 
 * https://github.com/erilyth/Hello-World-Python_Sugar
 * [Your example here?]
+# carbonic-activity
