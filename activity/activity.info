@@ -1,8 +1,8 @@
 [Activity]
-name = HelloWorld
-activity_version = 6
-bundle_id = org.sugarlabs.HelloWorld
-exec = sugar-activity3 activity.HelloWorldActivity
-icon = activity-helloworld
-license = GPLv2+
-repository = https://github.com/sugarlabs/hello-world-fork.git
+name = Carbonic
+activity_version = 1
+bundle_id = io.srevinsaju.carbonic
+exec = sugar-activity3 activity.CarbonicActivity
+icon = activity-carbonic
+license = GPLv3
+repository = https://github.com/srevinsaju/carbonic-activity
