@@ -145,5 +145,5 @@ class HelloWorldActivity(activity.Activity):
             self.hold0.set_markup('<span size="xx-large"><b>' + d[0] + '</b></span>')
             self.hold_lo1.set_markup('<span size="xx-large"><b>' + d[1] + '</b></span>')
             self.hold_lo2.set_markup('<span size="xx-large"><b>' + d[2] + '</b></span>') 
-            self.hold_lo2.set_markup('<span size="xx-large"><b>' + d[3] + '</b></span>')		     		
+            self.hold_lo3.set_markup('<span size="xx-large"><b>' + d[3] + '</b></span>')		     		
 		
