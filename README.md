@@ -1,9 +1,23 @@
-## Sugar Hello World Example
+![carbonic logo]((https://github.com/srevinsaju/carbonic)
 
-This is an example Sugar Desktop Activity, that follows the "Hello World" tradition of being a small and simple demonstration of a complete program for a system. 
+# carbonic-activity (alpha-r1)
+A sugar activity derived from [carbonic](https://github.com/srevinsaju/carbonic)
+which manipulates IUPAC name of Hydrocarbons, to define the structural formula.
+It helps students to understand the various IUPAC name nomenclature in carbon 
+structure
 
-## Other Examples
+# Installation
+* Clone the source
+```git clone https://github.com/srevinsaju/carbonic-activity.git ~/Activities/Carbonic.activity```
+TODO: 
+* Release a flatpak package
 
-* https://github.com/erilyth/Hello-World-Python_Sugar
-* [Your example here?]
-# carbonic-activity
+# Screenshots (Pictures at Alpha stage)
+TODO:
+
+# Features
+Refer [carbonic](https://github.com/srevinsaju/carbonic) for more information
+
+
+
+
