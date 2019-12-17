@@ -11,12 +11,18 @@
 # Foundation, 51 Franklin Street, Suite 500 Boston, MA 02110-1335 USA
 
 from gettext import gettext as _
-
+import gi
 from gi.repository import Gtk
 from gi.repository import Gdk
-from gi.repository import WebKit2
+try:
+    gi.require_version('WebKit2', '4.0')
+    from gi.repository import WebKit2 as WebKit
+except ModuleNotFoundError:
+    gi.require_version('WebKit', '3.0')
+    from gi.repository import WebKit
 
 from sugar3.graphics import style
+
 from sugar3.graphics.icon import Icon
 from sugar3.graphics.toolbutton import ToolButton
 

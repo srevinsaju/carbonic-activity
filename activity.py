@@ -37,7 +37,7 @@ ALL CODE IS LICENSED UNDER GNU-GPL LICENSE. READ LICENSE FOR MORE INFORMATION
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
-
+from gi.repository import Pango
 from gettext import gettext as _
 
 from sugar3.activity import activity
@@ -47,7 +47,7 @@ from sugar3.activity.widgets import TitleEntry
 from sugar3.activity.widgets import StopButton
 from sugar3.activity.widgets import ShareButton
 from sugar3.activity.widgets import DescriptionItem
-
+from sugar3.graphics.style import FONT_FACE, FONT_SIZE
 from graphics import Graphics, FONT_SIZES
 from ccore import *
 
@@ -102,27 +102,29 @@ class CarbonicActivity(activity.Activity):
         print("LOG: #56, ", self._first_entry, self._first_entry )
         button = graphics.add_button(_("COMPUTE"), self.something )
         button.show()
-
+        FONT_FACE = 'Monospace'
+        input_font = Pango.FontDescription('%s %d' % (FONT_FACE, int(FONT_SIZE * 1.2)))
         self.hold_hi3 = graphics.add_text(
-            _(" "), size="xx-large", bold=True)
+            _(" "), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
+        self.hold_hi3.override_font(input_font)
             
         self.hold_hi2 = graphics.add_text(
-            _(" "), size="xx-large", bold=True)
-
+            _(" "), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
+        self.hold_hi2.override_font(input_font)
         self.hold_hi1 = graphics.add_text(
-            _(" "), size="xx-large", bold=True)
-
+            _(" "), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
+        self.hold_hi1.override_font(input_font)
         self.hold0 = graphics.add_text(
-            _("CH4"), size="xx-large", bold=True)
-            
+            _("CH4"), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
+        self.hold0.override_font(input_font)
         self.hold_lo1 = graphics.add_text(
-            _(" "), size="xx-large", bold=True)
+            _(" "), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
             
         self.hold_lo2 = graphics.add_text(
-            _(" "), size="xx-large", bold=True)
+            _(" "), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
  
         self.hold_lo3 = graphics.add_text(
-            _(" "), size="xx-large", bold=True)
+            _(" "), size="xx-large", bold=True, justify=Gtk.Justification.CENTER)
             
 
         center_in_panel.add(graphics)
