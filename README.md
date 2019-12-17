@@ -28,16 +28,16 @@ for more information.
 The API Nomencalture is as follows:
 * All alkanes, for example, `heptane`, `methane`, `pentane` can be given as-is
 * All alkenes and alkynes, if the Double/Triple Bond position is not mentioned assumes the second position
-c.f, `heptene`, `propene`
+  - c.f, `heptene`, `propene`
 * All alkenes and alkynes can be appended with `n-` to give the bond position
-c.f, `3-heptene` gives a heptene structure with double bond on 3rd Carbon Atom
+  - c.f, `3-heptene` gives a heptene structure with double bond on 3rd Carbon Atom
 * All functional groups like alcohol, ketone, carboxylic acid are functional in beta state.
-c.f, `propanoic acid`, `2-hexanoic acid` , `ethanol`, etc.
+  - c.f, `propanoic acid`, `2-hexanoic acid` , `ethanol`, etc.
 * For hydrocarbon functional groups like `methyl`, `ethyl`, it requires square brackets `[]`
-c.f `[2-methyl]pentane`, `[2-methyl,3-ethyl]5-dodecene`, etc.
+  - c.f `[2-methyl]pentane`, `[2-methyl,3-ethyl]5-dodecene`, etc.
 NOTE: for pure hydrocarbon functional groups, use ascending order, i.e, `methyl`, `ethyl`, `propyl` ...
 * Cyclic hydrocarbons and benzene can be used by appending `cyclo` to the beginning
-c.f `cyclohexane`, `benzene`
+  - c.f `cyclohexane`, `benzene`
 
 ## Future Plans
 * [ ] Add suppport for Anthracine, Naphthalene compounds.
