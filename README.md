@@ -1,6 +1,6 @@
-![carbonic logo]((https://github.com/srevinsaju/carbonic)
+<img src=activity/src-carbonic.svg width=25%>
 
-# carbonic-activity (alpha-r1)
+# carbonic-activity (r1)
 A sugar activity derived from [carbonic](https://github.com/srevinsaju/carbonic)
 which manipulates IUPAC name of Hydrocarbons, to define the structural formula.
 It helps students to understand the various IUPAC name nomenclature in carbon 
@@ -17,7 +17,6 @@ TODO:
 
 # Features
 Refer [carbonic](https://github.com/srevinsaju/carbonic) for more information
-
 
 
 
