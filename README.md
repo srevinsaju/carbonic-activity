@@ -12,8 +12,11 @@ structure
 TODO: 
 * Release a flatpak package
 
-# Screenshots (Pictures at Alpha stage)
-TODO:
+# Screenshots
+![Screenshot of Carbonic](screenshots/screenshot1.png)
+![Screenshot of Carbonic](screenshots/screenshot2.png)
+![Screenshot of Carbonic](screenshots/screenshot3.png)
+![Screenshot of Carbonic](screenshots/screenshot4.png)
 
 # Features
 Refer [carbonic](https://github.com/srevinsaju/carbonic) for more information
