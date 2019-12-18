@@ -43,6 +43,54 @@ NOTE: for pure hydrocarbon functional groups, use ascending order, i.e, `methyl`
 * [ ] Add suppport for Anthracine, Naphthalene compounds.
 * [ ] Add exceptions to check for errors in inputed IUPAC code, currently, it manipulates whatever is inputted. The output maybe wrong if the user input doesn't follow syntax, _see [README.md at carbonic](https://github.com/srevinsaju/carbonic)_
 
+## License
+### Carbonic core 
 
+```
+carbonic on github by @srevinsaju
+(c) 2019 by Srevin Saju (srevinsaju.github.io)
+CARBONIC CORE AI
+CONVERTS IUPAC NAMES TO CARBON STRUCTURES
+SRC ON https://github.com/srevinsaju/carbonic
+
+ALL CODE IS LICENSED UNDER GNU-AGPLv3 LICENSE. READ LICENSE FOR MORE INFORMATION
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, version 3.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+```
+### Carbonic Sugar Activity 
+
+```
+carbonic-activity on github by @srevinsaju
+(c) 2019 by Srevin Saju (srevinsaju.github.io)
+CARBONIC-SUGAR ACTIVITY
+CONVERTS IUPAC NAMES TO CARBON STRUCTURES
+SRC ON https://github.com/srevinsaju/carbonic-activity
+
+ALL CODE IS LICENSED UNDER GNU-GPLv3 LICENSE. READ LICENSE FOR MORE INFORMATION
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
 
 
