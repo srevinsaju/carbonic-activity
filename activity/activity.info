@@ -4,5 +4,5 @@ activity_version = 1
 bundle_id = io.srevinsaju.carbonic
 exec = sugar-activity3 activity.CarbonicActivity
 icon = activity-carbonic
-license = GPLv3
+license = AGPLv3+
 repository = https://github.com/srevinsaju/carbonic-activity
