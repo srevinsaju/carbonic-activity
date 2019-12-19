@@ -1,11 +1,7 @@
 """
-carbonic-activity on github by @srevinsaju
-(c) 2019 by Srevin Saju (srevinsaju.github.io)
-CARBONIC-SUGAR ACTIVITY
-CONVERTS IUPAC NAMES TO CARBON STRUCTURES
-SRC ON https://github.com/srevinsaju/carbonic-activity
-
-ALL CODE IS LICENSED UNDER GNU-GPLv3 LICENSE. READ LICENSE FOR MORE INFORMATION
+    
+Carbonic for Sugar
+Copyright (C) 2019 Srevin Saju
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
