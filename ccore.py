@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 """
-carbonic on github by @srevinsaju
-(c) 2019 by Srevin Saju (srevinsaju.github.io)
-CARBONIC CORE AI
-CONVERTS IUPAC NAMES TO CARBON STRUCTURES
-SRC ON https://github.com/srevinsaju/carbonic
 
-ALL CODE IS LICENSED UNDER GNU-AGPL LICENSE. READ LICENSE FOR MORE INFORMATION
-
+Carbonic AI
+Copyright (C) 2019 Srevin Saju   
+ 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, version 3.
@@ -21,6 +17,10 @@ ALL CODE IS LICENSED UNDER GNU-AGPL LICENSE. READ LICENSE FOR MORE INFORMATION
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
     
 """
+
+
+
+
 # imports
 import os
 from math import ceil
